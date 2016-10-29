@@ -20,7 +20,7 @@ var api = {
     }
 };
 
-api.get.access = 'authenticates';
+api.get.access = 'authenticated';
 
 module.exports = api;
 
