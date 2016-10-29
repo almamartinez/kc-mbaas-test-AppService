@@ -14,7 +14,8 @@ table.columns = {
 // Permisos de acceso a la tabla
 
 table.read.access = 'anonymous';
-table.update.access = 'disable';
+// No permite hacer updates
+table.update.access = 'disabled';
 
 // Añade la tabla al módulo
 module.exports =  table;
