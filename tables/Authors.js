@@ -21,7 +21,14 @@ table.insert(function(context){
     return context.execute();
 });
 
-// Permisos de acceso a la tabla
+table.read(function (context) {
+    context.query.where({idUsuario : context.user.id});
+    return context.execute();
+});
+
+/*
+* Permisos de acceso a la tabla
+*/
 
 //acceso anónimo
 table.read.access = 'anonymous';
