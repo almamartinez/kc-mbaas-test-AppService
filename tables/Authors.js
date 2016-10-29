@@ -11,5 +11,10 @@ table.columns = {
     "surname" : "string"
 };
 
+// Permisos de acceso a la tabla
+
+table.read.access = 'anonymous';
+table.update.access = 'disable';
+
 // Añade la tabla al módulo
 module.exports =  table;
