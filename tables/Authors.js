@@ -16,9 +16,13 @@ table.columns = {
 //acceso anónimo
 table.read.access = 'anonymous';
 //acceso con autenticación
-//table.read.access = 'authenticated';
+table.read.access = 'authenticated';
+table.update.access = 'authenticated';
+table.insert.access = 'authenticated';
+table.delete.access = 'authenticated';
+
 // No permite hacer updates
-table.update.access = 'disabled';
+//table.update.access = 'disabled';
 
 
 // Añade la tabla al módulo
