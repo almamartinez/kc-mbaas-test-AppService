@@ -2,7 +2,9 @@ var express = require("express"),
     azuremobapps = require("azure-mobile-apps");
 
 var app = express(),
-    mobile = azuremobapps();
+    mobile = azuremobapps({ swagger: process.env.NODE_ENV !== 'production'});
+
+
 
 mobile.tables.import("./tables");
 mobile.api.import("./api");

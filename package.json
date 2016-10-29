@@ -18,6 +18,7 @@
   "homepage": "https://github.com/almamartinez/kc-mbaas-test-AppService#readme",
   "dependencies": {
     "azure-mobile-apps": "^3.0.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "swagger-ui": "^2.2.6"
   }
 }

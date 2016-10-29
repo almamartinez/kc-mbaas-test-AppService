@@ -11,6 +11,9 @@ table.columns = {
     "surname" : "string"
 };
 
+// Para hacer que la tabla sea estático y no podamos modificarlo
+table.dynamicSchema = false;
+
 /*
 * Trigger para insert
 * */
