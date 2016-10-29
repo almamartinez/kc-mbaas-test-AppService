@@ -14,9 +14,9 @@ table.columns = {
 // Permisos de acceso a la tabla
 
 //acceso anónimo
-//table.read.access = 'anonymous';
+table.read.access = 'anonymous';
 //acceso con autenticación
-table.read.access = 'authenticated';
+//table.read.access = 'authenticated';
 // No permite hacer updates
 table.update.access = 'disabled';
 
