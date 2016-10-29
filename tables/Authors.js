@@ -11,6 +11,16 @@ table.columns = {
     "surname" : "string"
 };
 
+/*
+* Trigger para insert
+* */
+table.insert(function(context){
+    //Id Usuario que ha generado el insert, para añadirlo a la tabla:
+    context.item.idUsuario = context.user.id;
+
+    return context.execute();
+});
+
 // Permisos de acceso a la tabla
 
 //acceso anónimo
