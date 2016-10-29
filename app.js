@@ -4,8 +4,8 @@ var express = require.("express"),
 var app = express(),
     mobile = azuremobapps();
 
-mobile.table.add("./tables");
-mobile.api.add("./api");
+mobile.tables.import("./tables");
+mobile.api.import("./api");
 
 app.use(mobile);
 
