@@ -1,5 +1,5 @@
 
-var azureMobileApp = require("azure-mobile-apps");
+var azureMobileApps = require("azure-mobile-apps");
 
 // crear tabla
 
